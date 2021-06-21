@@ -129,7 +129,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat:  Allows to watch log files being 'tailed' in Kibana, simplifies the collection, parsing and visualization of most log formats.
-             It allows to filter by service, app, host, datacenter, or other criteria to track down any unussual behavior across aggregated logs.
+             It allows to filter by service, app, host, datacenter, or other criteria to track down any unusual behavior across aggregated logs.
 
 - Metricbeat: Provides GUI for CPU, memory, file system, network IO, disk IO, statistics/metrics for processing running on the systems like Apache,
               MySQL, NGINX, etc. 
@@ -138,9 +138,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the elk.yml file to /etc/ansible/
+- Update the hosts file to include the IP address and python3 language as follows: 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+- Run the playbook, and navigate to http://10.1.0.4:5601 or http://40.75.5.137 ( if allowed from the outside ) to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
