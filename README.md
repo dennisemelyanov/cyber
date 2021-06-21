@@ -68,9 +68,9 @@ Jump box is the only machine that can access the rest of the network nodes ( asy
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
  - _TODO: What does Filebeat watch for?_
- Filebeat watches/monitors changes in log files
+Filebeat watches/monitors changes in log files
  - _TODO: What does Metricbeat record?_
- Metricbeat monitors CPU, memory, network, disk, plus apps like apache, docker , etc. In other words data from operating system and services
+Metricbeat monitors CPU, memory, network, disk, plus apps like apache, docker , etc. In other words data from operating system and services
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
