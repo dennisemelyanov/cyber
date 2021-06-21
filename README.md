@@ -91,7 +91,7 @@ Only the Jump Box and Elk-Server machines can accept connections from the Intern
 - Whitelisted IP addresses: 76.102.188.228,174.194.192.151,70.35.42.0/24
 
 Machines within the network can only be accessed by Jump-Box.
-- Which machine did you allow to access your ELK VM? What was its IP address? -- Jump-Box(Provisioner), IP:10.0.0.12
+- Which machine is allowed to access your ELK VM? -- Jump-Box(Provisioner), IP:10.0.0.12
 
 A summary of the access policies in place can be found in the table below.
 
@@ -103,13 +103,18 @@ A summary of the access policies in place can be found in the table below.
  
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it minimizes the risk of misconfigurations, which
+potentially could lead to vulnerabilities.
+ 
+- What is the main advantage of automating configuration with Ansible? -- Any server can be replaced/configured/built with minimum down time.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
+- Increase memory allocation for VM
+- Install Docker and Python3
+- Download and Lauch ELK container
+- Setup ports
+- Enable Docker on start up
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
