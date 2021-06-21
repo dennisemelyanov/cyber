@@ -80,14 +80,14 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump Box | Management/IT access  | 10.0.0.12  | Linux            |
 | Web-1    | Web Server| 10.0.0.10 | Linux           |
 | Web-2    | Web Server| 10.0.0.11 | Linux           |
-| Web-3    | Web Server| 10.0.0.10 | Linux           |
+| Web-3    | Web Server| 10.0.0.13 | Linux           |
 | Elk-Sever| Data Proccessing| 10.1.0.4 | Linux        |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump Box and Elk-Server machines can accept connections from the Internet. Access to this machines is only allowed from the following IP addresses:
+Only the Jump Box and Elk-Server machines can accept connections from the Internet. Access to these machines is only allowed from the following IP addresses:
 - Whitelisted IP addresses: 76.102.188.228,174.194.192.151,70.35.42.0/24
 
 Machines within the network can only be accessed by Jump-Box.
@@ -122,7 +122,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- 10.0.0.10, 10.0.0.11, 10.0.0.13
 
 We have installed the following Beats on these machines:
 - _TODO: Specify which Beats you successfully installed_
