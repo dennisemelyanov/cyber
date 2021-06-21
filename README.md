@@ -49,7 +49,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ```
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -61,12 +61,14 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancers are the front end and do not expose the actual servers, plus they distribute the traffic between the back end servers to make sure the service is available.
+Jump box is the only machine that can access the rest of the network nodes ( asymmetric ssh key access ). Plus there is access control to a jump box too: IP source and ssh keys.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
+- _TODO: What does Filebeat watch for?_ - It watches for changes in log files
+- _TODO: What does Metricbeat record?_  It monitors CPU, memory, network, disk, plus apps like apache, docker , etc. In other words data from operating system and services
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
