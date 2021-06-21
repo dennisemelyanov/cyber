@@ -67,9 +67,9 @@ Load balancers are the front end and do not expose the actual servers, plus they
 Jump box is the only machine that can access the rest of the network nodes ( asymmetric ssh key access used ). Plus there is an access control to a jump box too: Specific IP sources are allowed and ssh keys.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
-_TODO: What does Filebeat watch for?_ 
--Filebeat watches/monitors changes in log files
-_TODO: What does Metricbeat record?_  
+ - _TODO: What does Filebeat watch for?_ 
+Filebeat watches/monitors changes in log files
+ - _TODO: What does Metricbeat record?_  
 -Metricbeat monitors CPU, memory, network, disk, plus apps like apache, docker , etc. In other words data from operating system and services
 
 The configuration details of each machine may be found below.
