@@ -140,11 +140,12 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the elk.yml file to /etc/ansible/
 - Update the hosts file to include the IP address and python3 language as follows: 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
-- Run the playbook, and navigate to http://10.1.0.4:5601 or http://40.75.5.137 ( if allowed from the outside ) to check that the installation worked as expected.
+- Run the playbook, and navigate to http://10.1.0.4:5601 or http://40.75.5.137:5601 ( if allowed from the outside ) to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
+- _Which file is the playbook? Where do you copy it? -- elk.yml is the playbook file and it should be in /etc/ansible/ diectory
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+-- Hosts file should be updated with a target host(s) IP address or a group name in square brackets [group name] with IP addresses of the target machines.
+- _Which URL do you navigate to in order to check that the ELK server is running? -- Local IP: 10.1.0.4:5601 or External IP: 40.75.5.137:5601 ( if allowed )
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
