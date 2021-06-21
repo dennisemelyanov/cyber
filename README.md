@@ -125,11 +125,15 @@ This ELK server is configured to monitor the following machines:
 - 10.0.0.10, 10.0.0.11, 10.0.0.13
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeat (Log files) and Metricbeat (Metrics)
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat:  Allows to watch log files being 'tailed' in Kibana, simplifies the collection, parsing and visualization of most log formats.
+             It allows to filter by service, app, host, datacenter, or other criteria to track down any unussual behavior across aggregated logs.
 
+- Metricbeat: Provides GUI for CPU, memory, file system, network IO, disk IO, statistics/metrics for processing running on the systems like Apache,
+              MySQL, NGINX, etc. 
+ 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
